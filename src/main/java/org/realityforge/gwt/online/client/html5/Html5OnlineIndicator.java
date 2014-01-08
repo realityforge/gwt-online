@@ -8,7 +8,7 @@ public final class Html5OnlineIndicator
   extends OnlineIndicator
 {
   public static native boolean isSupported()/*-{
-    return typeof ($wnd.onLine) == "boolean";
+    return typeof (navigator.onLine) == "boolean";
   }-*/;
 
   public Html5OnlineIndicator()
