@@ -55,13 +55,13 @@ public abstract class OnlineIndicator
   public abstract boolean isOnLine();
 
   @Nonnull
-  public final HandlerRegistration addOffLineEventHandler( @Nonnull OffLineEvent.Handler handler )
+  public final HandlerRegistration addOffLineHandler( @Nonnull OffLineEvent.Handler handler )
   {
     return _eventBus.addHandler( OffLineEvent.getType(), handler );
   }
 
   @Nonnull
-  public final HandlerRegistration addOnLineEventHandler( @Nonnull OnLineEvent.Handler handler )
+  public final HandlerRegistration addOnLineHandler( @Nonnull OnLineEvent.Handler handler )
   {
     return _eventBus.addHandler( OnLineEvent.getType(), handler );
   }

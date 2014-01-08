@@ -30,7 +30,7 @@ public class OnlineIndicatorTest
 
     {
       final OnLineEvent.Handler handler = mock( OnLineEvent.Handler.class );
-      final HandlerRegistration registration = indicator.addOnLineEventHandler( handler );
+      final HandlerRegistration registration = indicator.addOnLineHandler( handler );
       indicator.onOnLine();
       verify( handler, only() ).onOnLineEvent( Mockito.<OnLineEvent>anyObject() );
       registration.removeHandler();
@@ -40,7 +40,7 @@ public class OnlineIndicatorTest
 
     {
       final OffLineEvent.Handler handler = mock( OffLineEvent.Handler.class );
-      final HandlerRegistration registration = indicator.addOffLineEventHandler( handler );
+      final HandlerRegistration registration = indicator.addOffLineHandler( handler );
       indicator.onOffLine();
       verify( handler, only() ).onOffLineEvent( Mockito.<OffLineEvent>anyObject() );
       registration.removeHandler();
