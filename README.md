@@ -58,7 +58,7 @@ if ( null != indicator )
     }
   } );
 
-  if( indicator.isOnline() )
+  if( indicator.isOnLine() )
   {
     // Have a separate code path if online...
   }
