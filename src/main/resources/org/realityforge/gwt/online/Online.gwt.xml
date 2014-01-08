@@ -1,0 +1,5 @@
+<module>
+  <inherits name='com.google.web.bindery.event.Event'/>
+
+  <source path="client"/>
+</module>
