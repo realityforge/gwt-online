@@ -1,6 +1,8 @@
 gwt-appcache
 ============
 
+[![Build Status](https://secure.travis-ci.org/realityforge/gwt-online.png?branch=master)](http://travis-ci.org/realityforge/gwt-online)
+
 The WHATWG Web Applications 1.0 specification describes mechanisms
 for detecting when the browser is "online" and supports event
 notification when the online status changes. This library provides a
